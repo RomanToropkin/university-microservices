@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/university
+    username: un_attendance
+    password: pass1234
+    driver-class-name: org.postgresql.Driver
+    configuration:
+      poolName: ${spring.application.name}
+      maximumPoolSize: 10
+      minimumIdle: 5
+      connectionTimeout: 10000
+      prepStmtCacheSize: 300
+      prerStmtCacheSqlLimit: 2048
+      cachePrepStmts: true
+      tcpKeepAlive: true
